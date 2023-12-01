@@ -200,7 +200,6 @@ ul {
 
 .hero-container {
     text-align: center;
-    width: 1440px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -624,6 +623,7 @@ ul {
 }
 
 .team-job-title {
+    margin-bottom: 8px;
     color: var(--color-slate);
     text-align: center;
     font-size: 16px;
@@ -641,7 +641,7 @@ ul {
     gap: 24px;
     align-items: center;
     justify-content: center;
-    padding: 32px 0;
+    padding: 0;
 }
 
 
@@ -774,9 +774,7 @@ ul {
 
 
 .footer-social-networks-container {
-    display: flex;
     margin-right: 80px;
-    flex-direction: column;
 }
 
 .footer-social-networks-text {
