@@ -419,6 +419,12 @@ ul {
     opacity: 1;
 }
 
+.modal-accept-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .modal-accept-buttom {
     display: block;
     min-width: 169px;
@@ -434,27 +440,6 @@ ul {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
 }
-
-display: flex;
-cursor: pointer;
-padding: 8px 24px;
-justify-content: center;
-align-items: center;
-gap: 16px;
-border-radius: 4px;
-background: var(--color-iris);
-min-width: 165px;
-height: 40px;
-/* Button Text */
-color: var(--color-white);
-text-align: center;
-font-size: 16px;
-font-weight: 500;
-line-height: 1.5;
-letter-spacing: 0.64px;
-border: none;
-
-
 
 .modal-accept-buttom:hover,
 .modal-accept-buttom:focus {
