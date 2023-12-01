@@ -281,6 +281,30 @@ ul {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-text {
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+.modal-container {
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 4px;
+}
+
+.modal-input {
+    width: 360px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--IRIS, #4D5AE5);
+}
 
 .modal-buttom {
     display: flex;
@@ -307,9 +331,13 @@ ul {
     fill: #ffffff;
 }
 
-.modal-window-icon {
+.modal-close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     stroke: black;
+}
+
+.modal-vector-icon {
+    fill: var(--color-cloud);
 }
 
 /* /Modal window */
@@ -561,7 +589,6 @@ ul {
 
 .footer-container {
     display: flex;
-    align-items: baseline
 }
 
 .footer-container-logo {
@@ -603,8 +630,7 @@ ul {
 
 .footer-social-networks-container {
     display: flex;
-    align-items: baseline;
-    margin-right: 120px;
+    margin-right: 80px;
     flex-direction: column;
 }
 
@@ -649,6 +675,72 @@ ul {
 .footer-social-networks-icon {
     fill: var(--color-cloud);
 
+}
+
+/* Subscribe */
+
+.footer-subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-subscribe-text {
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+.input::placeholder {
+    color: var(--color-white);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.48px;
+}
+
+
+
+.footer-subscribe-input {
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-bottom: 8px;
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background: var(--color-navy-blue);
+}
+
+.footer-subscribe-button {
+    display: flex;
+    cursor: pointer;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background: var(--color-iris);
+    /* Button Text */
+    color: var(--color-white);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+}
+
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+    background: var(--color-ocean);
+}
+
+.footer-subscribe-icon {
+    fill: var(--color-cloud);
 }
 
 /* /Footer */
