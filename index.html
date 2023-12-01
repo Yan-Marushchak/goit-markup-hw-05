@@ -498,6 +498,7 @@
                 name="user-name"
                 id="user-name"
                 pattern="[A-Za-z0-9]"
+                required
               />
               <svg
                 class="modal-icon"
@@ -512,12 +513,13 @@
           </div>
 
           <div class="modal-form-container">
-            <label class="modal-label" for="user-phone">Phone
+            <label class="modal-label" for="user-phone-number">Phone
             <div class="modal-input-container">
               <input
                 class="modal-input"
                 type="tel"
-                name="user-phone"
+                name="user-phone-number"
+                 id="user-phone-number"
                 required
               />
               <svg
@@ -539,8 +541,8 @@
                 class="modal-input"
                 type="email"
                 name="user-email"
+                id="user-email"
                 required
-                placeholder=""
               />
               <svg
                 class="modal-icon"
@@ -567,33 +569,32 @@
             </label>
             </div>
           
-            <div class="modal-privacy-container">  </div>
+            <div class="modal-privacy-container">  
             <input
-            class="visually-hidden"
+            class="modal-privacy-checkbox"
             type="checkbox"
-            name="user-privacy"
-            id="user-privacy"
+            name="privacy-policy"
+            id="privacy-policy"
             value="true"
             required
           />
-          <label class="modal-label-privacy" for="user-privacy">I accept the terms and conditions of the
-            <a class="modal-privacy-policy-link">Privacy Policy</a>
-            <span class="modal-span-privacy">
+          <label class="modal-label-privacy" for="user-privacy">
+            <span class="modal-span-privacy-checkbox">
               <svg class="modal-vector-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
-              </span>
-            </div>
+            </span>
+            I accept the terms and conditions of the <a class="modal-privacy-policy-link" href="">Privacy Policy</a>  
           </label>
-      
+          </div>
         <button class="modal-accept-buttom" type="submit">Send</button>
+</form>
 
         <button class="modal-close-buttom" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-buttom"></use>
           </svg>
         </button>
-        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
