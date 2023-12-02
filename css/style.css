@@ -853,7 +853,7 @@ ul {
 }
 
 .footer-subscribe-button {
-    display: flex;
+    display: inline-flex;
     cursor: pointer;
     padding: 8px 24px;
     justify-content: center;
@@ -861,8 +861,6 @@ ul {
     gap: 16px;
     border-radius: 4px;
     background: var(--color-iris);
-    min-width: 165px;
-    height: 40px;
     /* Button Text */
     color: var(--color-white);
     text-align: center;
