@@ -859,7 +859,6 @@ ul {
     justify-content: center;
     align-items: center;
     min-width: 165px;
-    gap: 16px;
     border-radius: 4px;
     background: var(--color-iris);
     /* Button Text */
